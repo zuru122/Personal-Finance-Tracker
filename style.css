@@ -105,12 +105,6 @@ header h1 {
 
 }
 
-/* Chart styling */
-#finance-chart {
-    margin-top: 20px;
-    width: 100%;
-    height: 300px;
-}
 
 /* Responsive Design */
 @media (max-width: 600px) {
