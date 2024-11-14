@@ -10,6 +10,6 @@ Transaction Management: Implement sorting and filtering capabilities, allowing u
 # How it works
 * postive amount means  income eg(1000, 2000 etc)
 * negative amount means expenses eg(-1000)
-* The sort by date sort trasaction by date and the sort by amount by toogling it
+* The sort by date sort trasaction by date and the sort by amount by ammount  they all work by toogling it
 * The income  is shown  by the green text while the expenses is shown by red text
 * Also, you can add custom trasaction type that's not among the list by filing  in the prompt when you click on  add custom category
