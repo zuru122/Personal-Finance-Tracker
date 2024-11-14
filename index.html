@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker</title>
+</head>
+<body>
+    <div class="finance-tracker">
+        <img class="finance-tracker-img" src="assets/finance-tracker-imge.png" alt="img-finance-tracker">
+
+        <header>
+            <h1>Personal Finance Tracker</h1>
+        </header>
+
+        <section class="transaction-form">
+            <form id="transaction-form">
+                <input type="number" id="amount" placeholder="Amount" required />
+                <input type="date" id="date" required />
+                <select id="category">
+                    <option value="Salary">Salary</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Groceries">Groceries</option>
+                    <!-- More predefined categories -->
+                    <option value="Custom">+ Add Custom Category</option>
+                </select>
+                <input type="text" id="notes" placeholder="Notes (optional)" />
+                <button type="submit">Add Transaction</button>
+            </form>
+        </section>
+        
+        <section class="transaction-filters">
+            <select id="filter-category">
+                <option value="all">All Categories</option>
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+                <!-- More options based on user categories -->
+            </select>
+            <button onclick="sortByDate()">Sort by Date</button>
+            <button onclick="sortByAmount()">Sort by Amount</button>
+        </section>
+        
+        <section class="transaction-list" id="transaction-list">
+            <!-- Transactions dynamically populated here -->
+        </section>
+        
+        <section class="chart-section">
+            <canvas id="finance-chart"></canvas>
+        </section>
+        </div>
+
+    
+</body>
+</html>
